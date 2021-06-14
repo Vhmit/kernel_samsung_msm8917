@@ -105,8 +105,8 @@ fi
 echo -e "$green Build completed in $(($DIFF / 60)) minute(s) and $(($DIFF % 60)) seconds $reset"
 
 # Compress compiled image
-cd $ANYKERNELDIR
-cp $OUT_DIR/arch/arm/boot/zImage-dtb $ANYKERNEL_DIR
+cp $OUT_DIR/arch/arm/boot/zImage-dtb anykernel3/
+cd anykernel3
 
 if [ "$DEF" = "j4primelte_defconfig" ]; then
 	zip -r "ProjectMedusa-$(date +"%d-%m-%Y")-j4primelte.zip" *
@@ -114,8 +114,11 @@ else
 	zip -r "ProjectMedusa-$(date +"%d-%m-%Y")-j6primelte.zip" *
 fi
 
+cd ..
+
 # Upload drive with rclone
-cp ProjectMedusa-*.zip ~/drive/ProjectMedusa/Test/
+cd anykernel3
+cp ProjectMedusa-*.zip ${HOME}/drive/ProjectMedusa/Test/
 sh ${HOME}/infoscripts/driveinfo.sh
 
 sleep 5
