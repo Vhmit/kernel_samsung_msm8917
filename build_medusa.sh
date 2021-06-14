@@ -16,7 +16,7 @@ export SUBARCH=arm
 
 # Set kernel name and defconfig
 # export VERSION=
-DEF=j4primelte_defconfig
+DEF=j6primelte_defconfig
 export DEFCONFIG=$DEF
 
 # Keep it as is
@@ -47,6 +47,7 @@ echo -e "-----------------------------------------------------"
 echo    " Architecture: $ARCH                                 "
 echo    " Output directory: $OUT_DIR                          "
 echo    " Kernel version: $VERSION                            "
+echo	" Defconfig: $DEF				      "
 echo    " Build user: $KBUILD_BUILD_USER                      "
 echo    " Build machine: $KBUILD_BUILD_HOST                   "
 echo    " Build started on: $BUILD_START                      "
