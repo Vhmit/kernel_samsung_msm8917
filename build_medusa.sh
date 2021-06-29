@@ -16,7 +16,7 @@ export SUBARCH=arm
 
 # Set kernel name and defconfig
 # export VERSION=
-DEF=j6primelte_defconfig
+DEF=j4primelte_defconfig
 export DEFCONFIG=$DEF
 
 # Keep it as is
@@ -24,7 +24,7 @@ export LOCALVERSION=$VERSION
 
 # Export Username and machine name
 export KBUILD_BUILD_USER=Batu33TR
-export KBUILD_BUILD_HOST=ProjectMedusa
+export KBUILD_BUILD_HOST=Batu33TR-Server
 
 # Color definition
 red=`tput setaf 1`
@@ -83,10 +83,6 @@ if [ $DEFCONFIG_SUCCESS != 0 ]
 		exit
 fi
 
-echo "$DEFCONFIG" > defconfigname
-echo "$DEFCONFIG" > ${HOME}/infoscripts/defconfigname
-sh ${HOME}/infoscripts/buildstarted.sh
-
 # Build Kernel
 make O=$OUT_DIR ARCH=$ARCH KCFLAGS=-mno-android -j$(nproc --all)
 
@@ -104,25 +100,3 @@ fi
 
 
 echo -e "$green Build completed in $(($DIFF / 60)) minute(s) and $(($DIFF % 60)) seconds $reset"
-
-# Compress compiled image
-cp $OUT_DIR/arch/arm/boot/zImage-dtb anykernel3/
-cd anykernel3
-
-if [ "$DEF" = "j4primelte_defconfig" ]; then
-	zip -r "ProjectMedusa-$(date +"%d-%m-%Y")-j4primelte.zip" *
-else
-	zip -r "ProjectMedusa-$(date +"%d-%m-%Y")-j6primelte.zip" *
-fi
-
-cd ..
-
-# Upload drive with rclone
-cd anykernel3
-cp ProjectMedusa-*.zip ${HOME}/drive/ProjectMedusa/Test/
-sh ${HOME}/infoscripts/driveinfo.sh
-
-sleep 5
-
-# Upload to Telegram
-sh ${HOME}/infoscripts/buildcompleted.sh
