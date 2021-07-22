@@ -224,4 +224,6 @@ source "drivers/debug/Kconfig"
 
 source "drivers/security/samsung/icdrv/Kconfig"
 
+source "drivers/dts_eagle/Kconfig"
+
 endmenu
