@@ -5,7 +5,7 @@
 # Set defaults directory's
 ROOT_DIR=$(pwd)
 OUT_DIR=$ROOT_DIR/out
-ANYKERNEL_DIR=$ROOT_DIR/anykernel3
+ANYKERNEL_DIR=$ROOT_DIR/AnyKernel3
 KERNEL_DIR=$ROOT_DIR
 DATE=$(date +"%m-%d-%y")
 BUILD_START=$(date +"%s")
@@ -16,14 +16,14 @@ export SUBARCH=arm
 
 # Set kernel name and defconfig
 # export VERSION=
-DEF=j4primelte_defconfig
+DEF=j4corelte_defconfig
 export DEFCONFIG=$DEF
 
 # Keep it as is
 export LOCALVERSION=$VERSION
 
 # Export Username and machine name
-export KBUILD_BUILD_USER=Batu33TR
+export KBUILD_BUILD_USER=Leonel
 export KBUILD_BUILD_HOST=ProjectMedusa
 
 # Color definition
@@ -105,11 +105,11 @@ fi
 echo -e "$green Build completed in $(($DIFF / 60)) minute(s) and $(($DIFF % 60)) seconds $reset"
 
 # Compress compiled image
-cd $ANYKERNELDIR
+cd $ANYKERNEL_DIR
 cp $OUT_DIR/arch/arm/boot/zImage-dtb $ANYKERNEL_DIR
 
-if [ "$DEF" = "j4primelte_defconfig" ]; then
-	zip -r "ProjectMedusa-$(date +"%d-%m-%Y")-j4primelte.zip" *
+if [ "$DEF" = "j4corelte_defconfig" ]; then
+	zip -r "ProjectMedusa-$(date +"%d-%m-%Y")-j4corelte.zip" *
 else
 	zip -r "ProjectMedusa-$(date +"%d-%m-%Y")-j6primelte.zip" *
 fi
