@@ -47,6 +47,7 @@ echo -e "-----------------------------------------------------"
 echo    " Architecture: $ARCH                                 "
 echo    " Output directory: $OUT_DIR                          "
 echo    " Kernel version: $VERSION                            "
+echo	" Defconfig: $DEF				      "
 echo    " Build user: $KBUILD_BUILD_USER                      "
 echo    " Build machine: $KBUILD_BUILD_HOST                   "
 echo    " Build started on: $BUILD_START                      "
@@ -81,10 +82,6 @@ if [ $DEFCONFIG_SUCCESS != 0 ]
 		echo "$red Error: make $DEFCONFIG failed, specified a defconfig not present? $reset"
 		exit
 fi
-
-echo "$DEFCONFIG" > defconfigname
-echo "$DEFCONFIG" > ${HOME}/infoscripts/defconfigname
-sh ${HOME}/infoscripts/buildstarted.sh
 
 # Build Kernel
 make O=$OUT_DIR ARCH=$ARCH KCFLAGS=-mno-android -j$(nproc --all)
