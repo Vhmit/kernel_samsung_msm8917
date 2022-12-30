@@ -1,0 +1,1 @@
+cmd_drivers/net/wireless/built-in.o :=  arm-linux-androideabi-ld -EL    -r -o drivers/net/wireless/built-in.o drivers/net/wireless/ath/built-in.o drivers/net/wireless/wcnss/built-in.o drivers/net/wireless/cnss_prealloc/built-in.o drivers/net/wireless/cnss_crypto/built-in.o drivers/net/wireless/prima/built-in.o 

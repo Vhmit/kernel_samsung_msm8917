@@ -13,7 +13,7 @@ export ARCH=arm
 [ -d ${OUT_DIR} ] && rm -rf ${OUT_DIR}
 mkdir ${OUT_DIR}
 
-make ${COMMON_ARGS} j6primelte_ltn_open_defconfig
+make ${COMMON_ARGS} j4corelte_defconfig
 make -j64 ${COMMON_ARGS}
 
 cp ${OUT_DIR}/arch/arm/boot/zImage $(pwd)/arch/arm/boot/zImage

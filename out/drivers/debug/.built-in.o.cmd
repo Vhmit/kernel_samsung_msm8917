@@ -1,0 +1,1 @@
+cmd_drivers/debug/built-in.o :=  arm-linux-androideabi-ld -EL    -r -o drivers/debug/built-in.o drivers/debug/sec_bsp.o drivers/debug/sec_smem.o drivers/debug/sec_debug.o drivers/debug/sec_getlog.o drivers/debug/sec_key_notifier.o drivers/debug/sec_crashkey_user.o drivers/debug/sec_debug_summary.o drivers/debug/user_reset/built-in.o 

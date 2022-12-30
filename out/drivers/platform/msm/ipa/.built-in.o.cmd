@@ -1,0 +1,1 @@
+cmd_drivers/platform/msm/ipa/built-in.o :=  arm-linux-androideabi-ld -EL    -r -o drivers/platform/msm/ipa/built-in.o drivers/platform/msm/ipa/ipa_v2/built-in.o drivers/platform/msm/ipa/ipa_clients/built-in.o drivers/platform/msm/ipa/ipa_common 

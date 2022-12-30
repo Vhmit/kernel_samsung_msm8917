@@ -1,0 +1,1 @@
+cmd_drivers/media/platform/msm/camera_v2/sensor/eeprom/built-in.o :=  arm-linux-androideabi-ld -EL    -r -o drivers/media/platform/msm/camera_v2/sensor/eeprom/built-in.o drivers/media/platform/msm/camera_v2/sensor/eeprom/msm_eeprom.o drivers/media/platform/msm/camera_v2/sensor/eeprom/msm_otp.o 

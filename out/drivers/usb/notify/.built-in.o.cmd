@@ -1,0 +1,1 @@
+cmd_drivers/usb/notify/built-in.o :=  arm-linux-androideabi-ld -EL    -r -o drivers/usb/notify/built-in.o drivers/usb/notify/host_notify_class.o drivers/usb/notify/external_notify.o drivers/usb/notify/usblog_proc_notify.o drivers/usb/notify/usb_notify_layer.o drivers/usb/notify/usb_notifier_qcom.o 

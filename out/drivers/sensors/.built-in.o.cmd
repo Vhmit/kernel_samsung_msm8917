@@ -1,0 +1,1 @@
+cmd_drivers/sensors/built-in.o :=  arm-linux-androideabi-ld -EL    -r -o drivers/sensors/built-in.o drivers/sensors/sensors_ssc.o drivers/sensors/sensors_core.o drivers/sensors/lis2ds_core.o drivers/sensors/lis2ds_i2c.o drivers/sensors/cm36686.o 

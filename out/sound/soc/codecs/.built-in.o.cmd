@@ -1,0 +1,1 @@
+cmd_sound/soc/codecs/built-in.o :=  arm-linux-androideabi-ld -EL    -r -o sound/soc/codecs/built-in.o sound/soc/codecs/wcdcal-hwdep.o sound/soc/codecs/audio-ext-clock.o sound/soc/codecs/snd-soc-msm8952-wcd.o sound/soc/codecs/msm8916-wcd-irq.o sound/soc/codecs/snd-soc-msm-stub.o 

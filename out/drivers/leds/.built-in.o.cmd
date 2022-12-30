@@ -1,0 +1,1 @@
+cmd_drivers/leds/built-in.o :=  arm-linux-androideabi-ld -EL    -r -o drivers/leds/built-in.o drivers/leds/led-core.o drivers/leds/led-class.o drivers/leds/led-triggers.o drivers/leds/leds-qpnp.o drivers/leds/leds-qpnp-flash.o drivers/leds/leds-qpnp-wled.o drivers/leds/leds-ktd2026.o drivers/leds/leds-s2mu005.o drivers/leds/trigger/built-in.o 

@@ -1,0 +1,1 @@
+cmd_drivers/usb/notify/usb_notify_layer.o := arm-linux-androideabi-ld -EL    -r -o drivers/usb/notify/usb_notify_layer.o drivers/usb/notify/usb_notify.o drivers/usb/notify/usb_notify_sysfs.o drivers/usb/notify/dock_notify.o 

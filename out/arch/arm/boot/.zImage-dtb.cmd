@@ -1,0 +1,1 @@
+cmd_arch/arm/boot/zImage-dtb := (cat arch/arm/boot/zImage arch/arm/boot/dts/msm8917-sec-j4corelte-mea-open-r04.dtb arch/arm/boot/dts/msm8917-sec-j4corelte-mea-open-r00.dtb arch/arm/boot/dts/msm8917-sec-j4corelte-mea-open-r05.dtb arch/arm/boot/dts/msm8917-sec-j4corelte-mea-open-r03.dtb > arch/arm/boot/zImage-dtb) || (rm -f arch/arm/boot/zImage-dtb; false)

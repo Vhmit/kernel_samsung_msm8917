@@ -1,0 +1,1 @@
+cmd_drivers/pinctrl/qcom/built-in.o :=  arm-linux-androideabi-ld -EL    -r -o drivers/pinctrl/qcom/built-in.o drivers/pinctrl/qcom/pinctrl-msm.o drivers/pinctrl/qcom/pinctrl-msm8952.o drivers/pinctrl/qcom/pinctrl-msm8917.o drivers/pinctrl/qcom/pinctrl-msm8937.o drivers/pinctrl/qcom/pinctrl-msm8953.o 

@@ -1,0 +1,1 @@
+cmd_kernel/x509_certificate_list := cat /mnt/disco2/los_18_1/kernel/samsung/msm8917/verity_dev_keys.der.x509 signing_key.x509 /dev/null >kernel/x509_certificate_list ; echo "  - Including cert /mnt/disco2/los_18_1/kernel/samsung/msm8917/verity_dev_keys.der.x509" ; echo "  - Including cert signing_key.x509"

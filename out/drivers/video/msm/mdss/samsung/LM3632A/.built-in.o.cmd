@@ -1,0 +1,1 @@
+cmd_drivers/video/fbdev/msm/../../msm/mdss/samsung/LM3632A/built-in.o :=  arm-linux-androideabi-ld -EL    -r -o drivers/video/fbdev/msm/../../msm/mdss/samsung/LM3632A/built-in.o drivers/video/fbdev/msm/../../msm/mdss/samsung/LM3632A/lm3632a-panel_power.o 

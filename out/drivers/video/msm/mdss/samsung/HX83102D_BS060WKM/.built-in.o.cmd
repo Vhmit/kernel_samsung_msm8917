@@ -1,0 +1,1 @@
+cmd_drivers/video/fbdev/msm/../../msm/mdss/samsung/HX83102D_BS060WKM/built-in.o :=  arm-linux-androideabi-ld -EL    -r -o drivers/video/fbdev/msm/../../msm/mdss/samsung/HX83102D_BS060WKM/built-in.o drivers/video/fbdev/msm/../../msm/mdss/samsung/HX83102D_BS060WKM/ss_dsi_panel_HX83102D_BS060WKM.o 

@@ -1,0 +1,1 @@
+cmd_net/ipv4/tcp_westwood.ko := arm-linux-androideabi-ld -EL -r  -T ../scripts/module-common.lds    --fix-cortex-a53-843419 -o net/ipv4/tcp_westwood.ko net/ipv4/tcp_westwood.o net/ipv4/tcp_westwood.mod.o

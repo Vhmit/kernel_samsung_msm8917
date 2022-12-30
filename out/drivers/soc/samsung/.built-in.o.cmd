@@ -1,0 +1,1 @@
+cmd_drivers/soc/samsung/built-in.o :=  arm-linux-androideabi-ld -EL    -r -o drivers/soc/samsung/built-in.o drivers/soc/samsung/sec_misc.o drivers/soc/samsung/sec_param.o drivers/soc/samsung/sec_class.o 

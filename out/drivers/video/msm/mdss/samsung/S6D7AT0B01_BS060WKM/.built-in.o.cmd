@@ -1,0 +1,1 @@
+cmd_drivers/video/fbdev/msm/../../msm/mdss/samsung/S6D7AT0B01_BS060WKM/built-in.o :=  arm-linux-androideabi-ld -EL    -r -o drivers/video/fbdev/msm/../../msm/mdss/samsung/S6D7AT0B01_BS060WKM/built-in.o drivers/video/fbdev/msm/../../msm/mdss/samsung/S6D7AT0B01_BS060WKM/ss_dsi_panel_S6D7AT0B01_BS060WKM.o 

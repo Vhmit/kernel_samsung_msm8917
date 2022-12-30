@@ -1,0 +1,3 @@
+kernel/drivers/input/touchscreen/sec_incell_ts/sec_ts.ko
+kernel/drivers/input/touchscreen/sec_incell_ts/sec_ts_fw.ko
+kernel/drivers/input/touchscreen/sec_incell_ts/sec_ts_fn.ko

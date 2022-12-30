@@ -1,0 +1,1 @@
+cmd_drivers/media/platform/msm/vidc/governors/built-in.o :=  arm-linux-androideabi-ld -EL    -r -o drivers/media/platform/msm/vidc/governors/built-in.o drivers/media/platform/msm/vidc/governors/msm_vidc_dyn_gov.o drivers/media/platform/msm/vidc/governors/msm_vidc_table_gov.o 

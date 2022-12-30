@@ -1,0 +1,1 @@
+cmd_drivers/video/fbdev/msm/../../msm/mdss/samsung/PBA_BOOTING/built-in.o :=  arm-linux-androideabi-ld -EL    -r -o drivers/video/fbdev/msm/../../msm/mdss/samsung/PBA_BOOTING/built-in.o drivers/video/fbdev/msm/../../msm/mdss/samsung/PBA_BOOTING/ss_dsi_panel_PBA_BOOTING_fhd.o 
